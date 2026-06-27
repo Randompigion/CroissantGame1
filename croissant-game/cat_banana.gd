@@ -24,6 +24,8 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_floor():
 		$catBananaLOW/AnimationPlayer.play("walk")
+#	elif Input.is_action_pressed("Up"):
+#		$catBananaLOW/AnimationPlayer.play("run")
 	else:
 		$catBananaLOW/AnimationPlayer.play("Jump")
 		
