@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://x1ussfp5dagd"]
+
+[ext_resource type="ArrayMesh" uid="uid://crgqayfckjla2" path="res://Assets/Models/GroundPlane.obj" id="1_oxrx4"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cy74q"]
+points = PackedVector3Array(-12.478001, -3.1209064, -12.480406, 12.480406, -1.9510972, 12.480406, 12.480406, -3.1209064, 12.480406, 12.480406, -1.9510972, -12.480406, -12.478001, -1.9510972, 12.480406, -12.478001, -3.1209064, 12.480406, 12.480406, -3.1209064, -12.480406, -12.478001, -1.9510972, -12.480406)
+
+[node name="Meshlab" type="Node3D" unique_id=553686401]
+
+[node name="Concrete" type="StaticBody3D" parent="." unique_id=72030212]
+
+[node name="GroundPlane" type="MeshInstance3D" parent="Concrete" unique_id=328612714]
+mesh = ExtResource("1_oxrx4")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Concrete" unique_id=802335020]
+transform = Transform3D(0.97, 0, 0, 0, 0.97, 0, 0, 0, 0.97, 0, -0.2, 0)
+shape = SubResource("ConvexPolygonShape3D_cy74q")

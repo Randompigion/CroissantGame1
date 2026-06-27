@@ -13,7 +13,6 @@ func _physics_process(delta: float) -> void:
 	#this should make your speed change depending on inputs
 	if Input.is_action_pressed("Up"):
 		velocity.z = 40
-		print(velocity.z)
 	elif Input.is_action_pressed("Down"):
 		velocity.z = 20
 	else:
