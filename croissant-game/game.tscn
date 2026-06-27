@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cen513lnwqs5n"]
+
+[ext_resource type="PackedScene" uid="uid://d3vwhrgcjgbdv" path="res://cat_banana.tscn" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://dubng5ug4wwm0" path="res://kill_box.gd" id="2_e2o6t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e2o6t"]
+size = Vector3(7.5546875, 1, 87.62305)
+
+[sub_resource type="BoxMesh" id="BoxMesh_80nbo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_feb5d"]
+size = Vector3(92.79492, 2.7695313, 329.01147)
+
+[node name="Game" type="Node3D" unique_id=583554675]
+
+[node name="catBanana" parent="." unique_id=33877066 instance=ExtResource("1_80nbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5974052, -3.5112972)
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="catBanana" unique_id=1305403286]
+transform = Transform3D(-1, 0, 8.7422784e-08, 6.181724e-08, 0.7071068, 0.7071068, -6.181724e-08, 0.7071068, -0.7071068, 0, 3.8107934, -3.1967373)
+light_color = Color(0.70187616, 0.9091559, 0.7601787, 1)
+light_energy = 100.0
+light_size = 0.28
+
+[node name="Test Ground" type="StaticBody3D" parent="." unique_id=1892567013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.8771896, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Test Ground" unique_id=620536470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35.566467)
+shape = SubResource("BoxShape3D_e2o6t")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Test Ground" unique_id=1710008814]
+transform = Transform3D(7.48428, 0, 0, 0, 1, 0, 0, 0, 90.74391, 0, 0, 35.7184)
+mesh = SubResource("BoxMesh_80nbo")
+
+[node name="Test Ground" type="StaticBody3D" parent="Test Ground" unique_id=365976940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0934639, 102.11098)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Test Ground/Test Ground" unique_id=826983947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35.566467)
+shape = SubResource("BoxShape3D_e2o6t")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Test Ground/Test Ground" unique_id=1839147437]
+transform = Transform3D(7.48428, 0, 0, 0, 1, 0, 0, 0, 90.74391, 0, 0, 35.7184)
+mesh = SubResource("BoxMesh_80nbo")
+
+[node name="KillBox" type="Area3D" parent="." unique_id=87897011]
+script = ExtResource("2_e2o6t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="KillBox" unique_id=1909996922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -44.28841, 87.599785)
+shape = SubResource("BoxShape3D_feb5d")
+
+[connection signal="body_entered" from="KillBox" to="KillBox" method="_on_body_entered"]

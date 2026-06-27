@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d3vwhrgcjgbdv"]
+
+[ext_resource type="Script" uid="uid://ohqmuex4pwy" path="res://cat_banana.gd" id="1_e8hn6"]
+[ext_resource type="PackedScene" uid="uid://drlatcgm3gpb4" path="res://Assets/Models/catBananaLOW.glb" id="2_e8hn6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j8nx6"]
+radius = 0.68
+height = 3.5
+
+[node name="catBanana" type="CharacterBody3D" unique_id=33877066]
+script = ExtResource("1_e8hn6")
+
+[node name="Collsion" type="CollisionShape3D" parent="." unique_id=294440049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000101566315, 0.2635121, -0.006024599)
+shape = SubResource("CapsuleShape3D_j8nx6")
+debug_color = Color(0, 0.6, 0.69803923, 0.8627451)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1073512144]
+transform = Transform3D(-1, 0, 8.742278e-08, 4.371139e-08, 0.8660254, 0.5, -7.5710346e-08, 0.5, -0.8660254, 0, 2.8256378, -3.3360705)
+
+[node name="catBananaLOW" parent="." unique_id=1231879749 instance=ExtResource("2_e8hn6")]
