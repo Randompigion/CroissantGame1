@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 const SPEED = 15.0
-const JUMP_VELOCITY = 14
+const JUMP_VELOCITY = 20
 
 
 func _physics_process(delta: float) -> void:
@@ -12,11 +12,11 @@ func _physics_process(delta: float) -> void:
 	
 	#this should make your speed change depending on inputs
 	if Input.is_action_pressed("Up"):
-		velocity.z = 40
+		velocity.z = 35
 	elif Input.is_action_pressed("Down"):
 		velocity.z = 20
 	else:
-		velocity.z = 30
+		velocity.z = 25
 		
 	# Handle jump.
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
