@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b8j26slyi7x7e"
-path="res://.godot/imported/catBananaLOW.blend-dcf60ab01cc527a209cfb885e3e7419b.scn"
+uid="uid://ng51bcrpyb6e"
+path="res://.godot/imported/Assets.blend-ff7e0028eecf2c57099dcea0d0851488.scn"
 
 [deps]
 
-source_file="res://Assets/Models/catBananaLOW.blend"
-dest_files=["res://.godot/imported/catBananaLOW.blend-dcf60ab01cc527a209cfb885e3e7419b.scn"]
+source_file="res://Assets/Models/Assets.blend"
+dest_files=["res://.godot/imported/Assets.blend-ff7e0028eecf2c57099dcea0d0851488.scn"]
 
 [params]
 

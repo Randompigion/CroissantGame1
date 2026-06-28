@@ -23,11 +23,18 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	
 	if is_on_floor():
-		$catBananaLOW/AnimationPlayer.play("walk")
-#	elif Input.is_action_pressed("Up"):
-#		$catBananaLOW/AnimationPlayer.play("run")
+		if Input.is_action_pressed("Duck"):
+			$catBananaLOW/AnimationPlayer.play("Slide")
+			%catBananaCollsion.scale = Vector3(1,0.5,1)
+		elif Input.is_action_pressed("Up"):
+			$catBananaLOW/AnimationPlayer.play("run")
+		else:
+			$catBananaLOW/AnimationPlayer.play("walk")
+			%catBananaCollsion.scale= Vector3(1,1,1)
 	else:
 		$catBananaLOW/AnimationPlayer.play("Jump")
+	
+
 		
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir := Input.get_vector("Right", "Left", "Up", "Down")
