@@ -74,3 +74,5 @@ You may also notice that you can't restart (aside from dying), and the game paus
 
 ##### Credits
 I didn't use other people's work for the code nor the assets (which were all made in blender), so there isn't any attributions i need to make for this version. I kinda made all of it so thats why the graphics look that bad...
+The goal ring is inspired by sa2's and the character is based off the banana cat meme (i cannot find the person who made that online). Both of these were remade and changed when being recreated so they are different from the originals for preventing copyright issues.
+No AI was used while making this.
