@@ -62,7 +62,7 @@ While playing you may notice that some objects don't actually have collision, an
 
 
 Currently all of the assets are lower-poly versions of the ones that i will be using in the final version, so i wasn't able to turn them into parts of the environment's image (since you can probably tell it's not here). The original model would have cell shading for the characters which would react with the lighting of the enviorment. Despite making this (which is shown in the cover art), it was not importing correctly, so I had to temporarily make a version without the shading.
-
+<img width="1128" height="611" alt="Image" src="https://github.com/user-attachments/assets/2182ea14-0f27-47b7-884a-282946b8a005" />
 
 
 You may also notice that you can't restart (aside from dying), and the game pauses after you beat it. This is actually intensional, since I want it to eventually lead you back to the level select menu which doesn't exist right now. When I code that in, it will be fixed.
