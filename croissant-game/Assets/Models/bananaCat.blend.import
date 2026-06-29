@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdmjanbjl74p5"
-valid=false
+path="res://.godot/imported/bananaCat.blend-c14b85de84331fee3e6cc8cd9a6791fa.scn"
 
 [deps]
 
 source_file="res://Assets/Models/bananaCat.blend"
+dest_files=["res://.godot/imported/bananaCat.blend-c14b85de84331fee3e6cc8cd9a6791fa.scn"]
 
 [params]
 
@@ -47,7 +48,6 @@ blender/meshes/colors=false
 blender/meshes/uvs=true
 blender/meshes/normals=true
 blender/meshes/export_geometry_nodes_instances=false
-blender/meshes/gpu_instances=false
 blender/meshes/tangents=true
 blender/meshes/skins=2
 blender/meshes/export_bones_deforming_mesh_only=false
