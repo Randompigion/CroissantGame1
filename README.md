@@ -55,7 +55,7 @@ In addition to all of this, you can hold the left button on your mouse to sprint
 
 
 
-#### Trade-Offs in this version/Important notes
+#### Trade-Offs in this version/Notes
 
 While playing you may notice that some objects don't actually have collision, and you can go through them. This was actually done on purpose and they were removed after i made all of them to get a higher framerate on itch (which it was lacking before).
 
@@ -65,5 +65,4 @@ Currently all of the assets are lower-poly versions of the ones that i will be u
 <img width="1128" height="611" alt="Image" src="https://github.com/user-attachments/assets/2182ea14-0f27-47b7-884a-282946b8a005" />
 
 
-You may also notice that you can't restart (aside from dying), and the game pauses after you beat it. This is actually intensional, since I want it to eventually lead you back to the level select menu which doesn't exist right now. When I code that in, it will be fixed.
-
+You may also notice that you can't restart (aside from dying), and the game pauses after you beat it. This is actually intensional, since I want it to eventually lead you back to the level select menu which doesn't exist right now. When I code that in, it will be fixed. for the time being, please just refresh the page
