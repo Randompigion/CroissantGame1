@@ -10,8 +10,13 @@ A early itch.io demo of the running segment from a bigger game about croissants 
 
 <img width="1500" height="1500" alt="Image" src="https://github.com/user-attachments/assets/24c0b2c3-2270-4d62-9dfb-d9f64cfdf2f1" />
 
-**Features**: This build is meant to show off the movement system in a test demo level, and animations for the character running and winning the level.
-
+**Features**: This build is meant to show off the movement system in a test demo level, and animations for the character running and winning the level so its more based on it working technically instead of looking good.
+- The character's animations will react to inputs
+- There is collisions for walls that are part of the level (note that this doesn't count the decorative ones, the reason is explained below)
+- There's a level layout that was created using repeated elements
+- Sliding is a part of the controls, and the collision will shrink when you do it
+- A goal sign, with a victory animation and the game stopping after you touch it.
+- A respawn mechanic if you fall off the ground.
 
 
 
