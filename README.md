@@ -66,3 +66,6 @@ Currently all of the assets are lower-poly versions of the ones that i will be u
 
 
 You may also notice that you can't restart (aside from dying), and the game pauses after you beat it. This is actually intensional, since I want it to eventually lead you back to the level select menu which doesn't exist right now. When I code that in, it will be fixed. for the time being, please just refresh the page
+
+##### Credits
+I didn't use other people's work for the code nor the assets (which were all made in blender), so there isn't any attributions i need to make for this version. I kinda made all of it so thats why the graphics look that bad...
